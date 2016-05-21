@@ -15,9 +15,9 @@ int main(int argc, char * argv[])
 
   fprintf(stdout, "%d\n",conn.Initialize(false));
 
-  std::string buff = "2000, 5, 4, 8, 9";
+  std::string buff = "1, 5, 0.004, 0.008, 0.009";
   
-  while(1)
+  //  while(1)
     {
       fprintf(stdout, "%d, %d\n",conn.Send(buff.c_str(), buff.length()), errno);
     }
