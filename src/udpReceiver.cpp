@@ -129,7 +129,11 @@ int main(int argc, char * argv[])
 	      downTime = atof(pch);
 	    }
 
-	  if(interval && numShots && upTime && holdTime && downTime)
+	  if((interval >= 0)
+	     && (numShots >= 0)
+	     && (upTime >= 0)
+	     && (holdTime >=0)
+	     && (downTime >=0))
 	    {
 	      fprintf(stdout, "%f, %f, %f, %f, %f\n", interval, numShots, upTime, holdTime, downTime);
 	      startBlast(interval, numShots, upTime, holdTime, downTime);
