@@ -12,5 +12,6 @@ with newer versions of roboticscape, make a symbolic link `sudo ln -s -f ~/[path
 then set to run at startup under the roboticscape service
 
 `sudo systemctl daemon-reload`
+
 `sudo systemctl enable roboticscape`
 
