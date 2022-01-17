@@ -1,6 +1,13 @@
 # blastPulse
 Labview and c++ files for control of pulse blast length, interblast interval, and number of repeated blasts
 
+# Use
+
+1. Move both labview VIs to desired location
+2. Turn on Beaglebone Blue and wait for it to initialize 
+3. Connect to the BeagleBone-XXXX wifi network, password: BeagleBone
+4. Run blackPulse vi
+
 # src
 
 C++ files to run on formatted beaglebone blue
@@ -19,7 +26,7 @@ restart the beaglebone and check the program status
 
 `sudo systemctl status -u robotcontrol.service`
 
-# testing
+# Testing
 
 `src` contains a test executable `sendtest`, run with `./sendtest`
 
