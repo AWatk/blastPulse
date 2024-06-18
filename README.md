@@ -1,16 +1,20 @@
 # blastPulse
-Labview and c++ files for control of pulse blast length, interblast interval, and number of repeated blasts
+Labview and c++ files for control of pulse blast length, interblast interval, and number of repeated blasts. This is a system meant to operate using a laptop running a control VI that communicates with a BeagleBone Blue instrumented to control the solenoid hardware for a blast system.
 
-# Use
+# Generage Use
 
-1. Move both labview VIs to desired location
-2. Turn on Beaglebone Blue and wait for it to initialize 
-3. Connect to the BeagleBone-XXXX wifi network, password: BeagleBone
-4. Run blackPulse vi
+1. Click the green button in the top right of this repository labeled `Code` and either clone this repository using git or download and extract the zip file of the repository's contents
+2. Move the `BlastPulse-LabviewVIs` folder to your desired location
+3. Turn on Beaglebone Blue and wait for it to initialize 
+4. Connect to the BeagleBone-XXXX wifi network, password: BeagleBone
+5. In labview open the 'GenericBlastPulseWithTransducer' vi
+6. Follow the instructions embedded in the vi
 
-# src
+# BeagleBone Blue Setup
 
-C++ files to run on formatted beaglebone blue
+This assumes some familiarity with configuring an embedded linus system
+
+Copy the contents of `src` onto the beaglebone blue
 
 To compile `rc_blastPulse_UDPReceiver.cpp` run the command `g++ -o udpReceiver rc_blastPulse_UDPReceiver.cpp -lpthread -lroboticscape`
 
